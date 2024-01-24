@@ -1,0 +1,110 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#ecf2f8 ;
+}
+#card-grid-container{
+    padding: 5% 3% ;
+}
+#card-1{
+    background-color: #7541c8;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+#card-2{
+    background-color: #48556a;
+    color: #ffffff;
+}
+#card-3{
+    background-color: #ffffff;
+
+}
+#card-4{
+    background-color: #19212e;
+    color: #ffffff;
+}
+#card-5{
+    background-color: #ffffff;
+
+}
+
+#quote{
+    position: absolute;
+    right:15%;
+    top:0;
+    z-index: 1;
+}
+
+.grid-item{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.header .name{
+    font-size: 1rem;
+}
+
+.grid-item h4{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header img{
+    border-radius: 50%;
+    margin-right: 10px;
+    border:1px solid;
+}
+
+@media(min-width:576px){
+    
+    #card-grid-container{
+        display: flex;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    
+    #card-5{
+        flex-basis: 25%;
+    }
+
+    #main-left{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+
+    #main-left .grid-item{
+        margin-right: 15px;
+    }
+
+    #top, #bottom{
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #card-1, #card-4{
+       flex-basis: 65%;
+    }
+    #card-2, #card-3{
+        flex-basis: 35%;
+    }
+    
+}
